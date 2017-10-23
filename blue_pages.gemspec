@@ -38,13 +38,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<bluecloth>.freeze, ["~> 2.2"])
       s.add_runtime_dependency(%q<RedCloth>.freeze, ["~> 4.2.3"])
     else
-      s.add_dependency(%q<mongoid>.freeze, ["~> 3.0"])
+      s.add_dependency(%q<mongoid>.freeze, ["~> 6.0.0"])
       s.add_dependency(%q<mongoid-tree>.freeze, [">= 0"])
       s.add_dependency(%q<bluecloth>.freeze, ["~> 2.2"])
       s.add_dependency(%q<RedCloth>.freeze, ["~> 4.2.3"])
     end
   else
-    s.add_dependency(%q<mongoid>.freeze, ["~> 3.0"])
+    s.add_dependency(%q<mongoid>.freeze, ["~> 6.0.0"])
     s.add_dependency(%q<mongoid-tree>.freeze, [">= 0"])
     s.add_dependency(%q<bluecloth>.freeze, ["~> 2.2"])
     s.add_dependency(%q<RedCloth>.freeze, ["~> 4.2.3"])
