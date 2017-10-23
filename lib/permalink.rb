@@ -1,10 +1,10 @@
-require 'unicode_utils' if "".encoding_aware?
+require 'unicode_utils'
 
 module Permalink
 
   def self.from(string)
     # Remove chars with accents
-    string = if "".encoding_aware?
+    string = if ""
       UnicodeUtils.nfkd(string).gsub(/[^\x00-\x7F]/,'').downcase.to_s
     else
       string.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/n,'').downcase.to_s
